@@ -15,7 +15,7 @@ footer a:hover {
     border-color: rgb(252, 76, 122);
 }
 
-.hi-message {
+/*.hi-message {
     text-align: center;
     width: 14em;
     left: 50%;
@@ -58,9 +58,9 @@ footer a:hover {
         left: 50%;
         margin-left: -10px;
         position: absolute;
-    }
+    }*/
 
-.skewed-bg {
+/*.skewed-bg {
     min-width: 242px;
     width: 11em;
     margin: auto;
@@ -106,7 +106,7 @@ footer a:hover {
         overflow: hidden;
         transition: 0.8s all;
         border-radius: 10em;
-        /* mix-blend-mode: multiply; */
+       mix-blend-mode: multiply;
     }
 
 .progress {
@@ -125,9 +125,9 @@ footer a:hover {
     .progress.on {
         opacity: 1;
         animation: 13s loader 1;
-    }
+    }*/
 
-@keyframes loader {
+/*@keyframes loader {
     0% {
         width: 0;
     }
@@ -155,7 +155,7 @@ footer a:hover {
 
 #T, #I, #M, #C, #L1, #U, #L2, #O, #W {
     opacity: 0.99;
-}
+}*/
 
 .grid-layout-1 {
     display: grid;
@@ -294,9 +294,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     text-align: center;
-    font-size: 3em;
+    /*font-size: 3em;*/
     margin-top: 0.5em;
     margin-bottom: 0.8em;
+}
+
+#hello {
+text-align: center ;
 }
 
 h2 {
