@@ -106,14 +106,14 @@ p {
     .main h4 {
         text-transform: uppercase;
         font-size: 0.9em;
-        font-weight: 800;
+      /*  font-weight: 800;*/
         letter-spacing: 1px;
         margin-bottom: 1em;
     }
 
     .main h3 {
         margin-top: -13px;
-        font-weight: 400;
+      /*  font-weight: 400;*/
         font-size: 0.9em;
     }
 
@@ -163,11 +163,12 @@ h1 {
     text-align: center;
     margin-top: 0.5em;
     margin-bottom: 0.8em;
+      font-weight: 600;
 }
 
 h2 {
     text-align: left;
-    font-weight: 600;
+  /* font-weight: 600;*/
     font-size: 1.15em;
     padding-bottom: 5px;
     letter-spacing: -0.04em;
