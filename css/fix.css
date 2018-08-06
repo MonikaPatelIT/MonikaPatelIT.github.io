@@ -178,21 +178,6 @@ button {
     --filterwhite: grayscale(100%) brightness(10);
 }
 
-/* -- Fonts
-   –––––––– */
-
-/* do some font-face calls in here if you need to 
-@font-face {
-  font-family: "Futura W01";
-  src: url("/fonts/FuturaStd-Heavy-subset.woff");
-  font-style: normal;
-  font-weight: 600;
-  text-rendering: optimizeLegibility;
-}
-*/
-
-/* -- Inputs
-   ––––––––– */
 
 .input {
     font-family: var(--bookweight);
@@ -256,7 +241,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: var(--boldweight);
+    font-weight: var(--bookweight);
     color: var(--black);
     margin-bottom: var(--spacing);
 }
@@ -325,51 +310,6 @@ a:link, a:active, a:link {
     --transition-all: 0.36s all;
 }
 
-/*
-@styleguide
-
-@title Base 
-<h1 class="-upcase -lightweight">
-Base
-</h1>
-<p>Base contains a normalize in the form of fix (https://github.com/jaydenseric/Fix). Base typography, forms and variables declared here.</p>
-*/
-
-/* ENGINE 
-   –––––– */
-
-/* -- Icons
-   –––––––– */
-
-/*
-@styleguide
-
-@title Engine
-<h1 class="-upcase -lightweight">
-Engine
-</h1>
-<p>The ideal is to have no Engine and just go completely vanila. But when you need things like svg icons, or other useful mixins you can define them here and build with postcss.</p>
-*/
-
-/* -- Triangles
-   –––––––––––– */
-
-/* todo: make this work 
-@define-mixin tirangle, $direction, $colour: var(--black){
-  border-radius: 2rem;
-  &:before {
-    content: "";
-    position: absolute;
-    top: 7px;
-    left: -10px;
-    display: block;
-    border: 5px solid $colour;
-    border-color:  transparent $colour transparent transparent;
-  }
-}*/
-
-/* LAYOUT 
-   –––––– */
 
 /* -- Grid
    ––––––– */
@@ -463,225 +403,6 @@ Engine
     }
 }
 
-/*
-@styleguide
-
-@title Layout Grid
-<h1 class="-upcase -lightweight">
-Layout
-</h1>
-<div class="grid mq-small-half">
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">Hi I'm a column!</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">Hi I'm a column!</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">Hi I'm a column!</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">Hi I'm a column!</div>
-  </div>
-</div> 
-<div class="grid -m-top-3 mq-small-full">
-  <div class="col -span-cols-8">
-    <div class="-bg-grey-300 -h-100 -p-all-1">Hi I'm an 80% column!</div>
-  </div>
-  <div class="col -span-cols-2">
-    <div class="-bg-grey-300 -h-100 -p-all-1">Hi I'm a 20% column!</div>
-  </div>
-  <div class="col -w-100 m-top-1">
-    <div class="-bg-grey-300 -p-all-1">Hi I'm a 100% column!</div>
-  </div>
-  <div class="col -w-80 -offset-left-20 m-top-1">
-    <div class="-bg-grey-300 -p-all-1">Hi I'm an offset colum</div>
-  </div>
-</div>
-
-<strong>12 column grid</strong>
-<div class="grid-12 mq-small-full">
-  <div class="col -span-cols-9">
-    <div class="-bg-grey-300 -h-100 -p-all-1">9 cols</div>
-  </div>
-  <div class="col -span-cols-3">
-    <div class="-bg-grey-300 -h-100 -p-all-1">3 cols!</div>
-  </div>
-</div>
-
-<strong>16 column grid</strong>
-<div class="grid-16 mq-small-full">
-  <div class="col -span-cols-4">
-    <div class="-bg-grey-300 -h-100 -p-all-1">4 cols</div>
-  </div>
-  <div class="col -span-cols-4">
-    <div class="-bg-grey-300 -h-100 -p-all-1">4 cols</div>
-  </div>
-  <div class="col -span-cols-4">
-    <div class="-bg-grey-300 -h-100 -p-all-1">4 cols</div>
-  </div>
-  <div class="col -span-cols-1">
-    <div class="-bg-grey-300 -h-100 -p-all-1">1 col</div>
-  </div>
-   <div class="col -span-cols-1">
-    <div class="-bg-grey-300 -h-100 -p-all-1">1 col</div>
-  </div>
-   <div class="col -span-cols-1">
-    <div class="-bg-grey-300 -h-100 -p-all-1">1 col</div>
-  </div>
-   <div class="col -span-cols-1">
-    <div class="-bg-grey-300 -h-100 -p-all-1">1 col</div>
-  </div>
-  <div class="col -span-cols-2">
-    <div class="-bg-grey-300 -h-100 -p-all-1">2 cols</div>
-  </div>
-  <div class="col -span-cols-2">
-    <div class="-bg-grey-300 -h-100 -p-all-1">2 cols</div>
-  </div>
-  <div class="col -span-cols-2">
-    <div class="-bg-grey-300 -h-100 -p-all-1">2 cols</div>
-  </div>
-  <div class="col -span-cols-2">
-    <div class="-bg-grey-300 -h-100 -p-all-1">2 cols</div>
-  </div>
-  <div class="col -span-cols-2">
-    <div class="-bg-grey-300 -h-100 -p-all-1">2 cols</div>
-  </div>
-  <div class="col -span-cols-2">
-    <div class="-bg-grey-300 -h-100 -p-all-1">2 cols</div>
-  </div>
-  <div class="col -span-cols-2">
-    <div class="-bg-grey-300 -h-100 -p-all-1">2 cols</div>
-  </div>
-  <div class="col -span-cols-2">
-    <div class="-bg-grey-300 -h-100 -p-all-1">2 cols</div>
-  </div>
-</div>
-
-<strong>Fixed Width</strong>
-<div class="grid">
-  <div class="col -w-100">
-    <div class="-bg-grey-300 -p-all-1 grid mq-small-full">
-      <div class="col -w-10">
-        <div class="-bg-grey-100 -p-all-1">1</div>
-      </div>
-      <div class="col -w-10">
-        <div class="-bg-grey-100 -p-all-1">2</div>
-      </div>
-      <div class="col -w-10">
-        <div class="-bg-grey-100 -p-all-1">3</div>
-      </div>
-      <div class="col -w-10">
-        <div class="-bg-grey-100 -p-all-1">4</div>
-      </div>
-      <div class="col -w-10">
-        <div class="-bg-grey-100 -p-all-1">5</div>
-      </div>
-      <div class="col -w-10">
-        <div class="-bg-grey-100 -p-all-1">6</div>
-      </div>
-      <div class="col -w-10">
-        <div class="-bg-grey-100 -p-all-1">7</div>
-      </div>
-      <div class="col -w-10">
-        <div class="-bg-grey-100 -p-all-1">8</div>
-      </div>
-      <div class="col -w-10">
-        <div class="-bg-grey-100 -p-all-1">9</div>
-      </div>
-      <div class="col -w-10">
-        <div class="-bg-grey-100 -p-all-1">10</div>
-      </div>
-    </div>
-  </div>
-  <div class="col -w-10">
-    <div class="-bg-grey-300 -p-all-1">1</div>
-  </div>
-  <div class="col -w-10">
-    <div class="-bg-grey-300 -p-all-1">2</div>
-  </div>
-  <div class="col -w-10">
-    <div class="-bg-grey-300 -p-all-1">3</div>
-  </div>
-  <div class="col -w-10">
-    <div class="-bg-grey-300 -p-all-1">4</div>
-  </div>
-  <div class="col -w-10">
-    <div class="-bg-grey-300 -p-all-1">5</div>
-  </div>
-  <div class="col -w-10">
-    <div class="-bg-grey-300 -p-all-1">6</div>
-  </div>
-  <div class="col -w-10">
-    <div class="-bg-grey-300 -p-all-1">7</div>
-  </div>
-  <div class="col -w-10">
-    <div class="-bg-grey-300 -p-all-1">8</div>
-  </div>
-  <div class="col -w-10">
-    <div class="-bg-grey-300 -p-all-1">9</div>
-  </div>
-  <div class="col -w-10">
-    <div class="-bg-grey-300 -p-all-1">10</div>
-  </div>
-</div>
-
-<strong>Auto Width</strong>
-<div class="grid-auto">
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">1</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">2</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">3</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">4</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">5</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">6</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">7</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">8</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">9</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">10</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">11</div>
-  </div>
-  <div class="col">
-    <div class="-bg-grey-300 -p-all-1">12</div>
-  </div>
-</div>
-
-<strong>Gutterless Grid</strong>
-<div class="grid gutterless">
-  <div class="col -w-80">
-    <div class="-bg-grey-300 -p-all-1">Hi I'm an 80% column!</div>
-  </div>
-  <div class="col -w-20">
-    <div class="-bg-grey-100 -p-all-1">Hi I'm a 20% column!</div>
-  </div>
-  <div class="col -w-100">
-    <div class="-bg-grey-500 -p-all-1">Hi I'm a 100% column!</div>
-  </div>
-</div>
-*/
-
-/* -- Flex
-   ––––––– */
 
 .flex {
     display: -webkit-box;
@@ -709,57 +430,6 @@ Layout
             padding: 0;
         }
 
-/*
-@styleguide
-
-@title Flex
-<div class="flex">
-  <div class="item">
-    <div class="-bg-grey-300 -p-all-1">Hi I'm a item!</div>
-  </div>
-  <div class="item">
-    <div class="-bg-grey-300 -p-all-1">Hi I'm a item!</div>
-  </div>
-  <div class="item">
-    <div class="-bg-grey-300 -p-all-1">Hi I'm a item!</div>
-  </div>
-  <div class="item">
-    <div class="-bg-grey-300 -p-all-1">Hi I'm a item!</div>
-  </div>
-</div> 
-
-<strong>Gutterless Flex</strong>
-<div class="flex gutterless">
-  <div class="item -w-80">
-    <div class="-bg-grey-300 -p-all-1">Hi I'm an 80% item!</div>
-  </div>
-  <div class="item -w-20">
-    <div class="-bg-grey-100 -p-all-1">Hi I'm a 20% item!</div>
-  </div>
-  <div class="item -w-100">
-    <div class="-bg-grey-500 -p-all-1">Hi I'm a 100% item!</div>
-  </div>
-</div>
-*/
-
-/* MODULE 
-   –––––– */
-
-/*
-@styleguide
-
-@title Module
-<h1 class="-upcase -lightweight">
-Module
-</h1>
-<p>CSS for your Modules/Molecules live here, What is a molecule in css? - check out Brad Frost's pattern lab (http://patternlab.io/)</p>
-*/
-
-/* UTILITY 
-   ––––––– */
-
-/* -- Display
-   –––––––––– */
 
 .-d-block {
     display: block;
@@ -818,20 +488,6 @@ Module
 .-bg-grey-900 {
     background: var(--grey-900);
 }
-
-/*
-@styleguide
-
-@title Utility
-<h1 class="-upcase -lightweight">
-Utility
-</h1>
-All Utility classes go here.
-<p>Where are my Utilities? </p>
-*/
-
-/* -- Floats
-   ––––––––– */
 
 .-float-right {
     float: right;
