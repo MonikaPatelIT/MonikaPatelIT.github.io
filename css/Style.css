@@ -47,7 +47,7 @@ p {
 .main {
     grid-area: main;
     margin: 0 auto 40px;
-    line-height: 1.2em;
+    line-height: 1.0em;
     text-align: left;
     width: 70%;
     max-width: 35em;
