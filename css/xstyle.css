@@ -1,0 +1,203 @@
+﻿ @font-face{font-family:Brandon;font-style:normal;font-weight:700;src:url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.10b50ee4aa9930dd26ae117a07e922eb.eot);src:url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.10b50ee4aa9930dd26ae117a07e922eb.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.2bf5f4d8928806f7c91c290b5814aff9.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.70c7d99488f7e8cf27634e9c58bf6217.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.44a3e64aa120d1b7964f10be29ad878b.svg#BrandonGrotesqueBoldRegular) format("svg")}@font-face{font-family:Brandon;font-style:normal;font-weight:500;src:url(https://static-assets.strikinglycdn.com/fonts/brandon_reg-webfont.662dee687e0069f714f79db9bde55f81.eot);src:url(https://static-assets.strikinglycdn.com/fonts/brandon_reg-webfont.662dee687e0069f714f79db9bde55f81.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_reg-webfont.64088d528192c8fce171860f56a14a9f.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/brandon_reg-webfont.04206b825348a69ee85b523c1e67a70f.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_reg-webfont.348bd0ea620c7861d0c3ac028ba911ed.svg#BrandonGrotesqueRegularRg) format("svg")}@font-face{font-family:Brandon;font-style:normal;font-weight:300;src:url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.d23193b7e25a59254d67a04a9f6d4eaa.eot);src:url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.d23193b7e25a59254d67a04a9f6d4eaa.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.90829ddb7531a53c1dcd670d545999d2.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.2c18926b679dfb8abff6fc13c2b8beeb.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.518c0c41a5141b2e59732f43d9b70575.svg#BrandonGrotesqueLight) format("svg")}@font-face{font-family:Brandon;font-style:normal;font-weight:600;src:url(https://static-assets.strikinglycdn.com/fonts/brandon_med-webfont.78c65e04664b2559e1ca630e2606c3b5.eot);src:url(https://static-assets.strikinglycdn.com/fonts/brandon_med-webfont.78c65e04664b2559e1ca630e2606c3b5.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_med-webfont.43b22b68b4b50438a8c9d5ed49507204.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/brandon_med-webfont.b2cf0cf708268a04055c5d8545d811a4.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_med-webfont.785c578a01a0d60f61ad665fe481306d.svg#BrandonGrotesqueMedium) format("svg")}
+html,
+body {
+height: 100%;
+ font-family: "brandon grotesque", brandon, helvetica, sans-serif;
+}
+
+#header {
+    height: 100%;
+    background: url("/images/m4_lg-low.jpg") no-repeat center center fixed;
+    background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+  color:white;
+  text-shadow:0 1px 2px rgba(0,0,0,.2);
+
+ }
+
+.text-monika-patel p{
+  text-transform: uppercase;
+  font-size:110%;
+  
+ }
+.text-monika-patel p:before, .text-monika-patel p:after{
+  background:white;
+}
+
+.text-attention{
+    font-style: italic;
+}
+
+.section-title p{
+  text-transform: capitalize;
+  font-size:90%;
+  
+}
+.section-title p:before, .section-title p:after
+{
+  background:black;
+}
+
+.text-decoration-background p{
+  display:inline-block;
+  position:relative;
+}
+.text-decoration-background p:before,
+.text-decoration-background p:after{
+     content: " ";
+    display: inline-block;
+    height: 2px;
+    margin: 0 10px;
+    position: absolute;
+    top: 50%;
+    width: 80px;    
+   
+}
+.text-decoration-background p:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.text-decoration-background p:after {
+  left: 100%;
+  margin-left: 15px;
+  
+}
+
+section {
+    min-height: 100%;
+}
+/*Work Section*/
+
+#work{
+  background-color:#f2f2f2;
+}
+.work-company{
+color:#005792;
+  font-size:110%;
+  Font-weight:600; 
+}
+.work-role{
+ Font-weight:700; 
+}
+.work-location{
+  color:#fd5f00;
+}
+.work-desciption{
+   
+}
+.role-details{
+  text-align:left;
+}
+
+/* End Work Section */
+/*pastime */
+#image-Gallary .row > div {
+      padding: 0 4px !important;
+}
+
+#pastime img {
+    margin-top: 8px;
+    vertical-align: middle;
+  
+}
+ 
+footer {
+    
+    background-color: #f2f2f2;
+}
+
+footer .social{
+   text-shadow: 1px 1px 1px #ccc;
+  color:#5e5e5e;
+  font-size:7em;
+}
+footer .social:hover{
+   text-shadow: 1px 1px 1px #fff;
+  color:lightblue;
+}
+
+/*end pastime */
+/* Hidden and visible elemnt from Bootsrap3.0 */
+/*\
+ * Restore Bootstrap 3 "hidden" utility classes.
+\*/
+
+/* Breakpoint XS */
+@media (max-width: 575px) {
+    .hidden-xs-down, .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
+    .hidden-xs-up,
+    .hidden-unless-sm, .hidden-unless-md, .hidden-unless-lg, .hidden-unless-xl {
+        display: none !important;
+    }
+
+      #header {
+        background-image: url("/images/m4_sm.jpg");
+        /*background-position: 80% 80%;*/         
+    }
+  
+  .section-title p:before, .section-title p:after,.text-monika-patel p:before, .text-monika-patel p:after
+{
+  content:none;
+  }
+  .role-details{
+  text-align:center;
+}
+  footer .social{
+     font-size:3em;
+}
+}
+
+
+/* Breakpoint SM */
+@media (min-width: 576px) and (max-width: 767px) {
+    .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
+    .hidden-xs-up, .hidden-sm-up,
+    .hidden-unless-xs, .hidden-unless-md, .hidden-unless-lg, .hidden-unless-xl {
+        display: none !important;
+    }
+
+    #header {
+       background-position: 50% 30%;
+    }
+   footer .social{
+     font-size:4.5em;
+}
+  
+}
+
+/* Breakpoint MD */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
+    .hidden-xs-up, .hidden-sm-up, .hidden-md-up,
+    .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-lg, .hidden-unless-xl {
+        display: none !important;
+    }
+
+    #header {
+       background-position: 50% 30%;
+    }
+}
+
+/* Breakpoint LG */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hidden-lg-down, .hidden-xl-down,
+    .hidden-xs-up, .hidden-sm-up, .hidden-md-up, .hidden-lg-up,
+    .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-md, .hidden-unless-xl {
+        display: none !important;
+    }
+   #header {
+       background-position: 50% 30%;
+    }
+}
+
+/* Breakpoint XL */
+@media (min-width: 1200px) {
+    .hidden-xl-down,
+    .hidden-xs-up, .hidden-sm-up, .hidden-md-up, .hidden-lg-up, .hidden-xl-up,
+    .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-md, .hidden-unless-lg {
+        display: none !important;
+    }
+   #header {
+        background-position: 50% 30%;
+    }
+}
